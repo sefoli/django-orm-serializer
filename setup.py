@@ -3,7 +3,7 @@ setup(
   name = 'ormserializer',
   packages = ['ormserializer'], # this must be the same as the name above
   version = '0.1',
-  description = 'This serializer support django org data to json or xml',
+  description = 'This serializer support django org data to python object',
   author = 'Sefa Akgumus',
   author_email = 'sefisakgms@gmail.com',
   url = 'https://github.com/pyankara/', # use the URL to the github repo
