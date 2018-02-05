@@ -3,8 +3,8 @@ This serializer support django org data to json or xml
 
 ## Requirements
 
-..* Python(3.4, 3.5, 3.6)
-..* Django(1.10, 1.11, 2.0)
+..*Python(3.4, 3.5, 3.6)
+..*Django(1.10, 1.11, 2.0)
 
 ## Installation
 
