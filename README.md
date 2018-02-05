@@ -25,6 +25,7 @@ from ormserializer import Serializer
 serializer = Serializer()
 data = Model.objects.get(fieald=query)
 result_dict = serializer.serialize_to_dict(data)
+```
 
 * Get list data from django-orm. `serialize` This funtion has attributes which help returning array data quality. 
 
