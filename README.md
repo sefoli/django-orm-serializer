@@ -12,8 +12,15 @@ This serializer support django org data to json or xml
 
 ## Example
 
+* Get single data from django-orm. `serialize_to_dict` This funtion has attributes which help returning data quality. 
+
+| Option    | Help                                      |
+|-----------|-------------------------------------------|
+| instance  | Django query object                       |
+| cur_dept  | Starting dept value default=1             |
+| max_dept  | Maximum dept value default=2              |
+
 ```python
-#get single data from django-orm
 from ormserializer import Serializer
 serializer = Serializer()
 data = Model.objects.get(fieald=query)
