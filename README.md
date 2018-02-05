@@ -24,5 +24,18 @@ This serializer support django org data to json or xml
 from ormserializer import Serializer
 serializer = Serializer()
 data = Model.objects.get(fieald=query)
-result_dict = serializer.serializer_to_dict(data)
+result_dict = serializer.serialize_to_dict(data)
+
+* Get list data from django-orm. `serialize` This funtion has attributes which help returning array data quality. 
+
+| Option    | Help                                      |
+|-----------|-------------------------------------------|
+| qset      | Django queryset object                    |
+| max_dept  | Maximum dept value default=2              |
+
+```python
+from ormserializer import Serializer
+serializer = Serializer()
+data = Model.objects.filter(fieald=query)
+result_dict = serializer.serialize(data)
 ```
